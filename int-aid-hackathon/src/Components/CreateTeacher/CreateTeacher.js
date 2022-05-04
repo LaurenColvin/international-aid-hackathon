@@ -21,9 +21,7 @@ const CreateTeacher = (props) => {
 
     //TODO: error handling, pending ui?, navigation
     if (user) {
-        let currentUser = await logIn(email, password)
-        console.log(currentUser)
-      return console.log(user);
+      return console.log(session);
     } else {
       return console.error(error, 401);
     }
