@@ -3,12 +3,12 @@ import { Route, Routes } from "react-router-dom";
 
 import ScrollTop from './Components/ScrollTop/ScrollTop';
 import Nav from './Components/Nav/Nav';
-import LandingPage from './Components/LandingPage/LandingPage';
-import CreateDonor from './Components/CreateDonor/CreateDonor';
-import CreateTeacher from './Components/CreateTeacher/CreateTeacher';
-import TeacherProfile from './Components/TeacherProfile/TeacherProfile';
-import SearchPage from './Components/SearchPage/SearchPage';
-import About from './Components/About/About';
+import LandingPage from './Components/LandingPage';
+import CreateDonor from './Components/CreateDonor';
+import CreateTeacher from './Components/CreateTeacher';
+import TeacherProfile from './Components/TeacherProfile';
+import SearchPage from './Components/SearchPage';
+import About from './Components/About';
 import Footer from './Components/Footer/Footer';
 
 function App() {

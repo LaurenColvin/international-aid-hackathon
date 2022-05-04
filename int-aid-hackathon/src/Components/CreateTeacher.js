@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { dbClient } from "../../services/dbClient";
-import { logIn } from "../../utilities/logIn";
+import { dbClient } from "../services/dbClient";
+import { logIn } from "../utilities/logIn";
 
 const CreateTeacher = (props) => {
 
