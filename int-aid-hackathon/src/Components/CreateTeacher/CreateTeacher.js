@@ -29,7 +29,7 @@ const CreateTeacher = (props) => {
 
   return (
     <div>
-      <section>
+      <section className="w-96 h-96 bg-cyan-300">
         <p>
           {/* TODO: validate input, feedback (snackbar or alert) */}
           <input ref={emailRef} type="text" placeholder="email" />
