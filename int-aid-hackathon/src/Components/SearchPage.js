@@ -1,3 +1,5 @@
+import SearchPageCard from "./SearchPageCard";
+
 const SearchPage = (props) => {
     return (
         <div>
@@ -30,6 +32,7 @@ const SearchPage = (props) => {
                 </div>
                 <input type="text" placeholder="Search" className="input input-xs input-bordered mx-10 max-w-xs"/>
             </div>
+            <SearchPageCard/>
         </div>
     )
 }
