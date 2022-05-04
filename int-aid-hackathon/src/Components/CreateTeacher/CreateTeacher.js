@@ -29,14 +29,14 @@ const CreateTeacher = (props) => {
 
   return (
     <div>
-      <section>
+      <section className="w-96 h-96 bg-cyan-300">
         <p>
           {/* TODO: validate input, feedback (snackbar or alert) */}
           <input ref={emailRef} type="text" placeholder="email" />
 
           <input ref={passRef} type="text" placeholder="pass" />
 
-          <button onClick={(e) => handleClick(e)}>Submit</button>
+          <button class="btn btn-primary" onClick={(e) => handleClick(e)}>Submit</button>
         </p>
       </section>
     </div>
