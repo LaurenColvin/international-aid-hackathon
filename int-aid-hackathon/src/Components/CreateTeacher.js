@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { dbClient } from "../services/dbClient";
 import { logIn } from "../utilities/logIn";
+import CardWrapper from "./layout/CardWrapper";
 
 const CreateTeacher = (props) => {
 
@@ -28,7 +29,7 @@ const CreateTeacher = (props) => {
   };
 
   return (
-    <div className="justify-center flex">
+  <CardWrapper>
       <div className="artboard artboard-horizontal phone-1">
         <p>
           {/* TODO: validate input, feedback (snackbar or alert) */}
@@ -60,7 +61,7 @@ const CreateTeacher = (props) => {
           <button className="btn btn-primary" onClick={(e) => handleClick(e)}>Create Account</button>
         </p>
       </div>
-      </div>
+      </CardWrapper>
   );
 };
 
