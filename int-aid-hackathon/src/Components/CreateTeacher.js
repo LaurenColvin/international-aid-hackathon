@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { dbClient } from "../services/dbClient";
 import { logIn } from "../utilities/logIn";
+import CardWrapper from "./layout/CardWrapper";
 
 const CreateTeacher = (props) => {
 
@@ -28,18 +29,37 @@ const CreateTeacher = (props) => {
   };
 
   return (
-    <div>
-      <section className="w-96 h-96 bg-cyan-300">
+  <CardWrapper>
         <p>
           {/* TODO: validate input, feedback (snackbar or alert) */}
-          <input ref={emailRef} type="text" placeholder="email" />
-
-          <input ref={passRef} type="text" placeholder="pass" />
-
-          <button class="btn btn-primary" onClick={(e) => handleClick(e)}>Submit</button>
+          <h1>Let's Get Started</h1>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+            <input ref={emailRef} type="text" placeholder="" className="input input-bordered w-full max-w-xs"/>
+          </div>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text">Password</span>
+            </label>
+            <input ref={passRef} type="text" placeholder="" className="input input-bordered w-full max-w-xs"/>
+          </div>
+          <div className="form-control">
+            <label className="label cursor-pointer">
+              <input type="radio" name="radio-6" className="radio checked:bg-black-500" checked />
+              <span className="label-text">I am a Teacher</span> 
+            </label>
+          </div>
+          <div className="form-control">
+            <label className="label cursor-pointer">
+              <input type="radio" name="radio-6" className="radio checked:bg-black-500" checked />
+              <span className="label-text">I am a Donor</span> 
+            </label>
+          </div>
+          <button className="btn btn-primary" onClick={(e) => handleClick(e)}>Create Account</button>
         </p>
-      </section>
-    </div>
+  </CardWrapper>
   );
 };
 
