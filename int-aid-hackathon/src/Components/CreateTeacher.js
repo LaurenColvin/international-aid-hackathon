@@ -28,8 +28,8 @@ const CreateTeacher = (props) => {
   };
 
   return (
-    <div>
-      <div class="artboard artboard-horizontal phone-1">
+    <div className="justify-center flex">
+      <div className="artboard artboard-horizontal phone-1">
         <p>
           {/* TODO: validate input, feedback (snackbar or alert) */}
           <h1>Let's Get Started</h1>
@@ -60,7 +60,7 @@ const CreateTeacher = (props) => {
           <button className="btn btn-primary" onClick={(e) => handleClick(e)}>Create Account</button>
         </p>
       </div>
-    </div>
+      </div>
   );
 };
 
