@@ -36,7 +36,7 @@ const CreateTeacher = (props) => {
 
           <input ref={passRef} type="text" placeholder="pass" />
 
-          <button onClick={(e) => handleClick(e)}>Submit</button>
+          <button class="btn btn-primary" onClick={(e) => handleClick(e)}>Submit</button>
         </p>
       </section>
     </div>
