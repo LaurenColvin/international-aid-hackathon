@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 const LandingPage = (props) => {
     return (
         <div>
-            <div className="hero-image min-h-full flex content-center justify-center">
+            <div className="hero-image min-h-full h-96 flex content-center justify-center">
                 <div className="hero-content text-center">
                     <div className="max-w-xlg">
+                        <img src="https://cdn.discordapp.com/attachments/971825989174825001/971825991766925332/Chalkbox_White_1.png" alt="white-logo"></img>
                         <h1 className="text-4xl font-bold text-white">WE HELP EDUCATORS AROUND THE <br/> GLOBE GET THE SUPPLIES THEY NEED</h1>
                     </div>
                 </div>

@@ -45,23 +45,23 @@ const SchoolPage = (props) => {
         <h1 className="text-2xl font-bold text-left p-5 ml-50">
           Creating Your Account
         </h1>
-        <ul class="steps">
-          <li class="step step-secondary">
+        <ul className="steps">
+          <li className="step step-secondary">
             Step 1 <br /> Educator Information
           </li>
-          <li class="step step-secondary">
+          <li className="step step-secondary">
             Step 2 <br /> School Information
           </li>
-          <li class="step">
+          <li className="step">
             Step 3 <br /> Upload Pictures
           </li>
-          <li class="step">
+          <li className="step">
             Step 4 <br /> Add Your Story
           </li>
-          <li class="step">
+          <li className="step">
             Step 5 <br /> Create Supply List
           </li>
-          <li class="step">
+          <li className="step">
             Step 6 <br /> Review and Complete
           </li>
         </ul>
@@ -123,26 +123,26 @@ const SchoolPage = (props) => {
           />
         </div>
         {/*TODO: figure this out! is this really necessary? */ }
-        <div class="form-control w-full max-w-xs">
+        <div className="form-control w-full max-w-xs">
           <label className="label">
             <span className="label-text">How old are your students?</span>
           </label>
-          <div class="form-control flex">
-            <label class="label cursor-pointer">
+          <div className="form-control flex">
+            <label className="label cursor-pointer">
               <input type="checkbox" checked="" class="checkbox" />
-              <span class="label-text">3-5</span>
+              <span className="label-text">3-5</span>
             </label>
-            <label class="label cursor-pointer">
+            <label className="label cursor-pointer">
               <input type="checkbox" checked="" class="checkbox" />
-              <span class="label-text">6-10</span>
+              <span className="label-text">6-10</span>
             </label>
-            <label class="label cursor-pointer">
+            <label className="label cursor-pointer">
               <input type="checkbox" checked="" class="checkbox" />
-              <span class="label-text">11-13</span>
+              <span className="label-text">11-13</span>
             </label>
-            <label class="label cursor-pointer">
+            <label className="label cursor-pointer">
               <input type="checkbox" checked="" class="checkbox" />
-              <span class="label-text">14+</span>
+              <span className="label-text">14+</span>
             </label>
           </div>
         </div>
