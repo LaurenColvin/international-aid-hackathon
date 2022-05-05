@@ -14,6 +14,7 @@ import SchoolPage from './Components/TeacherSignUp/School';
 import PhotosPage from './Components/TeacherSignUp/Photos';
 import StoryPage from './Components/TeacherSignUp/Story';
 import SupplyListPage from './Components/TeacherSignUp/SupplyList';
+import ConfirmPage from './Components/TeacherSignUp/Confirm';
 import TeacherProfile from './Components/TeacherProfile';
 import SearchPage from './Components/SearchPage';
 import About from './Components/About';
@@ -37,6 +38,7 @@ function App() {
             <Route path="/photos" element={<PhotosPage/>} />
             <Route path="/story" element={<StoryPage/>} />
             <Route path="/supply-list" element={<SupplyListPage/>} />
+            <Route path="/review-and-complete" element={<ConfirmPage/>} />
             <Route path="/teacher-profile" element={<TeacherProfile/>} />
             <Route path="/search" element={<SearchPage/>} />
             <Route path="/about" element={<About/>} />
