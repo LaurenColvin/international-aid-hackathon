@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router";
 import { dbClient } from "../services/dbClient";
 import { logIn } from "../utilities/logIn";
 import CardWrapper from "./layout/CardWrapper";
@@ -8,12 +9,14 @@ const SignUp = (props) => {
   //TODO: determine if state or refs is ideal. Component should unmount on nav, removing ref from the dom, so it *shouldn't* be exposed.
   const emailRef = useRef();
   const passRef = useRef();
+  const navigate = useNavigate()
 
   //handle click
   const handleClick = async (event) => {
     event.preventDefault();
     let email = emailRef.current.value
     let password = passRef.current.value
+
     // destructure return from auth signup method
     const { user, session, error } = await dbClient.auth.signUp({
       email: email,
@@ -22,7 +25,8 @@ const SignUp = (props) => {
 
     //TODO: error handling, pending ui?, navigation
     if (user) {
-      return console.log(session);
+      console.log(user)
+      return navigate("./create-teacher")
     } else {
       return console.error(error, 401);
     }
@@ -45,6 +49,7 @@ const SignUp = (props) => {
             </label>
             <input ref={passRef} type="text" placeholder="" className="input input-bordered w-full max-w-xs"/>
           </div>
+          {/*TODO: value from check box*/} 
           <div className="form-control">
             <label className="label cursor-pointer">
               <input type="radio" name="radio-6" className="radio checked:bg-black-500" checked />

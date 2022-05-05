@@ -1,8 +1,26 @@
 import { Link } from "react-router-dom";
-
+import { dbClient } from "../../services/dbClient";
+import { teacherSubmitThree } from "../../utilities/teacherCreate";
+import { useNavigate } from "react-router";
 import CardWrapper from "../layout/CardWrapper";
 
 const PhotosPage = (props) => {
+//TODO: FIXME: DETERMINE IF URL OR TYPE=FILE, BUILD COMPONENT, SEPARATE BRANCH.
+const imgUrl = "https://www.mercurynews.com/wp-content/uploads/2022/04/EBT-L-CATSHOW-0403-11.jpg?w=525"
+const navigate = useNavigate()
+      
+        const handleNext = async (e) => {
+          e.preventDefault();
+        let userImg = imgUrl
+          const data = await dbClient.auth.session();
+          const id = data.user.id;
+      
+          const response = await teacherSubmitThree({ id, userImg});
+          console.log("response is");
+          console.log(response);
+          //TODO: IF ERROR ALERT ERROR, IF RESPONSE NAVIGATE
+          return navigate("/sign-up/4");
+        };
   return (
       <CardWrapper>
           <div>
@@ -30,7 +48,7 @@ const PhotosPage = (props) => {
                     <button className="btn  btn-accent text-white">Back</button>
                 </Link>
                 <Link className="link" to="/story">
-                    <button className="btn btn-primary text-white">Next</button>
+                    <button className="btn btn-primary text-white" onClick={(e) => {handleNext(e)}}>Next</button>
                 </Link> 
             </div>
           </div>
