@@ -10,6 +10,10 @@ import CreateDonor from './Components/CreateDonor';
 import CreateTeacher from './Components/TeacherSignUp/CreateTeacher';
 import DetailPage from './Components/TeacherSignUp/Details';
 import NamePage from './Components/TeacherSignUp/Name';
+import SchoolPage from './Components/TeacherSignUp/School';
+import PhotosPage from './Components/TeacherSignUp/Photos';
+import StoryPage from './Components/TeacherSignUp/Story';
+import SupplyListPage from './Components/TeacherSignUp/SupplyList';
 import TeacherProfile from './Components/TeacherProfile';
 import SearchPage from './Components/SearchPage';
 import About from './Components/About';
@@ -29,6 +33,10 @@ function App() {
             <Route path="/create-teacher" element={<CreateTeacher/>} />
             <Route path="/details" element={<DetailPage/>} />
             <Route path="/name" element={<NamePage/>} />
+            <Route path="/school" element={<SchoolPage/>} />
+            <Route path="/photos" element={<PhotosPage/>} />
+            <Route path="/story" element={<StoryPage/>} />
+            <Route path="/supply-list" element={<SupplyListPage/>} />
             <Route path="/teacher-profile" element={<TeacherProfile/>} />
             <Route path="/search" element={<SearchPage/>} />
             <Route path="/about" element={<About/>} />
