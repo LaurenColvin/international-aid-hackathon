@@ -32,7 +32,7 @@ const SupplyListPage = (props) => {
                 <Link className="link" to="/story">
                 <button className="btn  btn-primary">Back</button>
                 </Link>
-                <Link className="link" to="/review-and-complete">
+                <Link className="link" to="/sign-up/confirm">
                 <button className="btn btn-primary">Next</button>
                 </Link> 
             </div>

@@ -125,29 +125,6 @@ if (user) {
     
 }
 
-export const teacherSubmitFour = async ({id, q1, q2, q3}) => {
-    console.log(id, q1, q2, q3)
-    const {data: user, error} = await dbClient
-    .from("teacher_profiles")
-    .update({
-        q_1: `${q1}`,
-        q_2: `${q2}`,
-        q_3: `${q3}`,
-    })
-    .match({owner: id})
-
-    //TODO: ERROR HANDLING
-
-if (error) {
-    console.error(error)
-}
-if (user) {
-    console.log(user)
-    return user
-}
-    
-}
-
 //not that important
 //form thats prefilled --grace for that edit page
 // export default function Form({ bountyForm, setBountyForm, handleSubmit }) {

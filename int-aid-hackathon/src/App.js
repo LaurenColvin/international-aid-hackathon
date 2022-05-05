@@ -20,6 +20,7 @@ import About from './Components/About';
 import Footer from './Components/Footer/Footer';
 import EducatorView from './Components/Educator/EducatorView';
 import Foundation from './Components/layout/Foundation';
+import Confirm from './Components/TeacherSignUp/Confirm';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path="/sign-up/3" element={<PhotosPage/>} />
             <Route path="/sign-up/4" element={<StoryPage/>} />
             <Route path="/sign-up/5" element={<SupplyListPage/>} />
+            <Route path="/sign-up/confirm" element={<Confirm/>} />
 
             <Route path="/search" element={<SearchPage/>} />
             <Route path="/teacher-profile" element={<TeacherProfile/>} />
