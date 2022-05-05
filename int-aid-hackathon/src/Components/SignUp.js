@@ -3,7 +3,7 @@ import { dbClient } from "../services/dbClient";
 import { logIn } from "../utilities/logIn";
 import CardWrapper from "./layout/CardWrapper";
 
-const CreateTeacher = (props) => {
+const SignUp = (props) => {
 
   //TODO: determine if state or refs is ideal. Component should unmount on nav, removing ref from the dom, so it *shouldn't* be exposed.
   const emailRef = useRef();
@@ -63,4 +63,4 @@ const CreateTeacher = (props) => {
   );
 };
 
-export default CreateTeacher;
+export default SignUp;
