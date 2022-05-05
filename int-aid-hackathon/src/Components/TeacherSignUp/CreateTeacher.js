@@ -1,9 +1,19 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { dbClient } from "../../services/dbClient";
 import CardWrapper from "../layout/CardWrapper";
 
 const CreateTeacher = (props) => {
 
+  useEffect(() => {
+    const data = dbClient.auth.session()
+    let id = data.user.id
+    console.log(id)
+    return console.log(id)
+  },[])
+
   return (
+
   <CardWrapper>
     <div>
       <div className="hero min-h-xlg">
@@ -15,11 +25,12 @@ const CreateTeacher = (props) => {
         </div>
       </div>
       <div className="create-user-buttons flex justify-between mt-48">
+  
         <Link className="link" to="/">
-            <button className="btn  btn-accent text-white">Back</button>
+            <button className="btn btn-wide btn-accent text-white">Back</button>
         </Link>
-        <Link className="link" to="/details">
-            <button className="btn btn-primary">Next</button>
+        <Link className="link" to="/sign-up/details">
+            <button className="btn btn-wide btn-primary text-white">Next</button>
         </Link> 
       </div>
     </div>
