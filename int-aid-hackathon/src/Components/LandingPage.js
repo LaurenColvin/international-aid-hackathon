@@ -15,7 +15,7 @@ const LandingPage = (props) => {
                     <div className="max-w-m">
                     <p className="text-2xl py-7 text-black">Need supplies? Want to give supplies? <br/> You're in the right place.</p>
                     <Link className="link" to="/sign-up">
-                        <button className="btn  btn-primary text-white mb-3 bg-#006BA6-200">Let's Get Started!</button>
+                        <button className="btn  btn-primary text-white mb-3">Let's Get Started!</button>
                     </Link>
                     <Link to="/login"><h6 className="text-black underline">Already Have An Account? Sign In.</h6></Link>
                     </div>
