@@ -17,15 +17,15 @@ const DetailPage = (props) => {
       <div>
         <div className="flex justify-evenly mt-28">
           <div>
-            <img className="w-xl h-xl m-11" src="https://static.thenounproject.com/png/420338-200.png" alt="information-icon"></img>
+            <img className="w-xl h-72 m-11" src="https://cdn.discordapp.com/attachments/971825989174825001/971826068786929724/det-1.png" alt="information-icon"></img>
             <p className="text-center text-xl">Enter your information</p>
           </div>
           <div>
-          <img className="w-xl h-xl m-11" src="https://static.thenounproject.com/png/420338-200.png" alt="information-icon"></img>
+          <img className="w-xl h-72 m-11" src="https://cdn.discordapp.com/attachments/971825989174825001/971826069193752697/det-2.png" alt="information-icon"></img>
             <p className="text-center text-xl">Customize your profile</p>
           </div>
           <div>
-          <img className="w-xl h-xl m-11" src="https://static.thenounproject.com/png/420338-200.png" alt="information-icon"></img>
+          <img className="w-xl h-72 m-11" src="https://cdn.discordapp.com/attachments/971825989174825001/971826069709660190/det-3.png" alt="information-icon"></img>
           <p className="text-center text-xl">Choose your items</p>
           </div>
         </div>
