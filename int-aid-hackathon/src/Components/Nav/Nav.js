@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   return (
-    <div class="navbar bg-info-100">
+    <div class="navbar bg-info">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
