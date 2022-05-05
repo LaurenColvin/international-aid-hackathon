@@ -2,26 +2,19 @@ import React from "react";
 
 function WishItemCard({ thing }) {
   return (
-    <div className="card w-min- inline-block bg-base-100 shadow-xl">
+    <div className="card h-48 w-48 m-4 inline-block bg-base-100 border-4 border-secondary shadow-xl">
       <figure>
         <img
           src={thing.imgUrl}
           alt={thing.name}
-          className="h-20 object-scale-down  "
+          className="h-20 m-3 mb-0 object-scale-down  "
         />
       </figure>
-      <div className="card-body">
         <h2 className="card-title">{thing.name}</h2>
-        <section className="w-20  justify-end items-center gap-3 border-2 border-black">
-          Number of {thing.name} needed:
-          <div className="countdown font-mono text-6xl">
-            {thing.numberNeeded}
-          </div>
-        </section>
+          <h2>{thing.numberNeeded}</h2>  
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <button className="btn btn-primary">Buy Now</button>
         </div>
-      </div>
     </div>
   );
 }

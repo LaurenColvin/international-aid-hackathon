@@ -6,7 +6,7 @@ function EducatorCarousel() {
     <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full">
         <img
-          src="https://cdn.discordapp.com/attachments/971825989174825001/971870593437802526/Image_from_iOS_9.png"
+          src="https://cdn.discordapp.com/attachments/971825989174825001/971873977884618762/Mask_group_1.png"
           className="w-full h-72"
         />{" "}
         /
