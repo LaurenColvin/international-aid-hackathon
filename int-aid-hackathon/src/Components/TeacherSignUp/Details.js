@@ -4,8 +4,6 @@ import { dbClient } from "../../services/dbClient";
 
 import CardWrapper from "../layout/CardWrapper";
 
-import CardWrapper from "../layout/CardWrapper";
-
 const DetailPage = (props) => {
   useEffect(() => {
     const data = dbClient.auth.session()
