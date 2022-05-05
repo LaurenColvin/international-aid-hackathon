@@ -16,6 +16,7 @@ const SupplyListPage = (props) => {
                 <li class="step step-primary">Step 5 <br/> Create Supply List</li>
                 <li class="step">Step 6 <br/> Review and Complete</li>
             </ul>
+            {/*TODO: BRING IN COMPONENT TREE */}
             <div className="flex">
                 <div>
                     <p className="text-2xl text-left p-5">Select the supplies you would like added to your list.</p>

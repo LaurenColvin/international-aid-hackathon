@@ -124,3 +124,92 @@ if (user) {
 }
     
 }
+
+export const teacherSubmitFour = async ({id, q1, q2, q3}) => {
+    console.log(id, q1, q2, q3)
+    const {data: user, error} = await dbClient
+    .from("teacher_profiles")
+    .update({
+        q_1: `${q1}`,
+        q_2: `${q2}`,
+        q_3: `${q3}`,
+    })
+    .match({owner: id})
+
+    //TODO: ERROR HANDLING
+
+if (error) {
+    console.error(error)
+}
+if (user) {
+    console.log(user)
+    return user
+}
+    
+}
+
+//not that important
+//form thats prefilled --grace for that edit page
+// export default function Form({ bountyForm, setBountyForm, handleSubmit }) {
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label htmlFor="name">Name:</label>
+//       <input
+//         type="text"
+//         value={bountyForm.name}
+//         onChange={(e) => setBountyForm({ ...bountyForm, name: e.target.value })}
+//         id="name"
+//       />
+
+//       <label htmlFor="watedFor">wanted for:</label>
+//       <input
+//         type="text"
+//         value={bountyForm.wantedFor}
+//         onChange={(e) =>
+//           setBountyForm({ ...bountyForm, wantedFor: e.target.value })
+//         }
+//         id="wantedfor"
+//       />
+
+//       <label htmlFor="reward">Reward:</label>
+//       <input
+//         type="text"
+//         value={bountyForm.reward}
+//         onChange={(e) =>
+//           setBountyForm({ ...bountyForm, reward: e.target.value })
+//         }
+//         id="reward"
+//       />
+
+//       <label htmlFor="client">Client:</label>
+//       <input
+//         type="text"
+//         value={bountyForm.client}
+//         onChange={(e) =>
+//           setBountyForm({ ...bountyForm, client: e.target.value })
+//         }
+//         id="client"
+//       />
+
+//       <label htmlFor="ship">Ship:</label>
+//       <input
+//         type="text"
+//         value={bountyForm.ship}
+//         onChange={(e) => setBountyForm({ ...bountyForm, ship: e.target.value })}
+//         id="ship"
+//       />
+
+//       <label htmlFor="captured">Captured:</label>
+//       <input
+//         type="text"
+//         value={bountyForm.captured}
+//         onChange={(e) =>
+//           setBountyForm({ ...bountyForm, captured: e.target.value })
+//         }
+//         id="captured"
+//       />
+
+//       <input type="submit" />
+//     </form>
+//   );
+// }

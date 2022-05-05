@@ -25,6 +25,8 @@ const StoryPage = (props) => {
     //TODO: IF ERROR ALERT ERROR, IF RESPONSE NAVIGATE
     return navigate("/sign-up/5");
   };
+  //TODO: FIXME: CLASS SHOULD BE CLASSNAME
+  
   return (
     <CardWrapper>
       <div>
