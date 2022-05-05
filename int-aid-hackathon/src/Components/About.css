@@ -1,0 +1,35 @@
+h1, p, h2{
+  margin: 35px;
+}
+
+img {
+  width: 140px;
+  margin: 45px;
+  display: inline-block;
+}
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  color: black;
+  margin: 1px;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(49, 156, 219);
+  font-size: 40px;
+  margin-left: 35px;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+}
+
+#imf {
+  color: rgb(37, 164, 33);
+  font-weight: bold;
+}
