@@ -28,20 +28,29 @@ function App() {
 <Foundation>
         <ScrollTop>
           <Routes>
+            
             <Route path="/" element={<LandingPage/>} />
-            <Route path="/sign-up" element={<SignUp/>} />
+            
+
+         
             <Route path="/login" element={<LoginModal/>} />
+            <Route path="/sign-up" element={<SignUp/>} />
             <Route path="/create-donor" element={<CreateDonor/>} />
-            <Route path="/create-teacher" element={<CreateTeacher/>} />
-            <Route path="/details" element={<DetailPage/>} />
-            <Route path="/name" element={<NamePage/>} />
-            <Route path="/school" element={<SchoolPage/>} />
-            <Route path="/photos" element={<PhotosPage/>} />
-            <Route path="/story" element={<StoryPage/>} />
-            <Route path="/supply-list" element={<SupplyListPage/>} />
-            <Route path="/teacher-profile" element={<TeacherProfile/>} />
+            <Route path="sign-up/create-teacher/" element={<CreateTeacher/>} />
+            <Route path="/sign-up/details" element={<DetailPage/>} />
+
+            <Route path="/sign-up/1" element={<NamePage/>} />
+            <Route path="/sign-up/2" element={<SchoolPage/>} />
+            <Route path="/sign-up/3" element={<PhotosPage/>} />
+            <Route path="/sign-up/4" element={<StoryPage/>} />
+            <Route path="/sign-up/5" element={<SupplyListPage/>} />
+
             <Route path="/search" element={<SearchPage/>} />
+            <Route path="/teacher-profile" element={<TeacherProfile/>} />
+            {/*<Route path="/search/:id" element={<SchoolPage/>} /> */}
             <Route path="/about" element={<About/>} />
+
+            
             <Route path="/educator" element={<EducatorView/>} />
           </Routes>
         </ScrollTop>

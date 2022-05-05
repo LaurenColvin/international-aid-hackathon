@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router";
 import { dbClient } from "../services/dbClient";
 import { logIn } from "../utilities/logIn";
 import CardWrapper from "./layout/CardWrapper";
@@ -8,6 +9,7 @@ const SignUp = (props) => {
   //TODO: determine if state or refs is ideal. Component should unmount on nav, removing ref from the dom, so it *shouldn't* be exposed.
   const emailRef = useRef();
   const passRef = useRef();
+  const navigate = useNavigate()
 
   //handle click
   const handleClick = async (event) => {
@@ -23,7 +25,8 @@ const SignUp = (props) => {
 
     //TODO: error handling, pending ui?, navigation
     if (user) {
-      return console.log(session);
+      console.log(user)
+      return navigate("./create-teacher")
     } else {
       return console.error(error, 401);
     }
