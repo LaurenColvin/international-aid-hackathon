@@ -54,6 +54,7 @@ const SupplyListPage = (props) => {
                 </div>
               </div>
             </div>
+
             {/* card ends here */}
             {/* <SupplyListCard/> */}
             <div class="card card-compact w-96 bg-base-100 shadow-xl mb-3">
@@ -110,6 +111,9 @@ const SupplyListPage = (props) => {
                   <button class="btn btn-primary">-</button>
                 </div>
               </div>
+
+
+
             </div>
             {/* card ends here */}
             {/* <SupplyListCard/> */}

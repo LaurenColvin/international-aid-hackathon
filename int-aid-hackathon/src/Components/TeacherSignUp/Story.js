@@ -101,7 +101,7 @@ const StoryPage = (props) => {
 
         {/* TODO: bring form to center */}
         <div className="create-user-buttons flex justify-between mt-48">
-          <Link className="link" to="/photos">
+          <Link className="link" to="/sign-up/3">
             <button className="btn  btn-accent text-white">Back</button>
           </Link>
           <Link to="/supply-list">Skip This Section</Link>
