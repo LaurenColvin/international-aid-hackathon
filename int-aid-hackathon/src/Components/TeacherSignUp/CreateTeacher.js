@@ -16,10 +16,10 @@ const CreateTeacher = (props) => {
       </div>
       <div className="create-user-buttons flex justify-between mt-48">
         <Link className="link" to="/">
-            <button className="btn  btn-accent text-white">Back</button>
+            <button className="btn btn-wide btn-accent text-white">Back</button>
         </Link>
         <Link className="link" to="/details">
-            <button className="btn btn-primary">Next</button>
+            <button className="btn btn-wide btn-primary text-white">Next</button>
         </Link> 
       </div>
     </div>
