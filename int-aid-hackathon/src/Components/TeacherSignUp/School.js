@@ -8,8 +8,8 @@ const SchoolPage = (props) => {
           <div>
             <h1 className="text-2xl font-bold text-left p-5 ml-50">Creating Your Account</h1>
             <ul class="steps">
-                <li class="step step-primary">Step 1 <br/> Educator Information</li>
-                <li class="step step-primary">Step 2 <br/> School Information</li>
+                <li class="step step-secondary">Step 1 <br/> Educator Information</li>
+                <li class="step step-secondary">Step 2 <br/> School Information</li>
                 <li class="step">Step 3 <br/> Upload Pictures</li>
                 <li class="step">Step 4 <br/> Add Your Story</li>
                 <li class="step">Step 5 <br/> Create Supply List</li>
@@ -70,12 +70,12 @@ const SchoolPage = (props) => {
                         </label>
                     </div>
                 </div>
-            <div className="create-user-buttons">
+            <div className="create-user-buttons flex justify-between mt-48">
                 <Link className="link" to="/name">
-                <button className="btn  btn-primary">Back</button>
+                    <button className="btn  btn-accent text-white">Back</button>
                 </Link>
                 <Link className="link" to="/photos">
-                <button className="btn btn-primary">Next</button>
+                    <button className="btn btn-primary text-white">Next</button>
                 </Link> 
             </div>
           </div>
