@@ -9,9 +9,7 @@ const Nav = (props) => {
       <Link className="btn btn-ghost normal-case text-xl" to="/about">
         <h3>About</h3>
       </Link>
-      <Link className="btn btn-ghost normal-case text-xl" to="/teacher-profile">
-        <h3>Profile</h3>
-      </Link>
+  
       <Link className="btn btn-ghost normal-case text-xl" to="/search">
         <h3>Search Listings</h3>
       </Link>
