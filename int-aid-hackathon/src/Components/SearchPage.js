@@ -33,6 +33,9 @@ const SearchPage = (props) => {
                 <input type="text" placeholder="Search" className="input input-xs input-bordered mx-10 max-w-xs"/>
             </div>
             <SearchPageCard/>
+            <SearchPageCard/>
+            <SearchPageCard/>
+
         </div>
   );
 };
