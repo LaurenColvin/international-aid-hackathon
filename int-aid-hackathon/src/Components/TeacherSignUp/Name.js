@@ -77,7 +77,7 @@ const NamePage = (props) => {
           />
         </div>
         <div className="create-user-buttons flex justify-between mt-48">
-          <Link className="link" to="/details">
+          <Link className="link" to="/sign-up/details">
             <button className="btn  btn-accent text-white">Back</button>
           </Link>
 

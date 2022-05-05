@@ -12,6 +12,9 @@ function Confirm() {
         <Link to="/teacher-profile">
         <div className='btn btn-primary'>Continue</div>
         </Link>
+        <Link className="link" to="/sign-up/5">
+          <button className="btn  btn-primary">Back</button>
+        </Link>
     </div>
   )
 }

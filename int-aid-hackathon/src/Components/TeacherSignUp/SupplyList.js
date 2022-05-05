@@ -29,7 +29,7 @@ const SupplyListPage = (props) => {
 
             {/* TODO: bring form to center */}
             <div className="create-user-buttons">
-                <Link className="link" to="/story">
+                <Link className="link" to="/sign-up/4">
                 <button className="btn  btn-primary">Back</button>
                 </Link>
                 <Link className="link" to="/sign-up/confirm">

@@ -30,7 +30,7 @@ const DetailPage = (props) => {
           </div>
         </div>
         <div className="create-user-buttons flex justify-between mt-36">
-          <Link className="link" to="/create-teacher">
+          <Link className="link" to="/sign-up/create-teacher">
               <button className="btn btn-wide btn-accent text-white">Back</button>
           </Link>
           <Link className="link" to="/sign-up/1">
