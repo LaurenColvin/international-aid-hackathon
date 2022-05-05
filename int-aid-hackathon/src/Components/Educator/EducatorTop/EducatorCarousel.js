@@ -6,8 +6,8 @@ function EducatorCarousel() {
     <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full">
         <img
-          src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2"
-          className="w-full"
+          src="https://cdn.discordapp.com/attachments/971825989174825001/971873977884618762/Mask_group_1.png"
+          className="w-full h-72"
         />{" "}
         /
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
