@@ -1,6 +1,27 @@
-import SearchPageCard from "./SearchPageCard";
+import SearchPageCard from "./SearchPageCard"
+import { dbClient } from "../services/dbClient"
+import { useState, useEffect } from "react"
 
 const SearchPage = (props) => {
+  const [allPosts, setAllPosts] = useState([])
+
+  useEffect(() => {
+    getPosts()
+  }, [])
+
+  const getPosts = async () => {
+    const { data, error } = await dbClient.from("teacher_profiles").select()
+    setAllPosts(data)
+    console.log(allPosts)
+  }
+
+    const mappedPosts = allPosts.map((teacher, idx) => {
+      console.log(teacher)
+    return (
+      <SearchPageCard teacher={teacher} id={idx}/>
+      )
+    })
+
   return (
     <div>
       <div className="hero min-h-full bg-base-200">
@@ -17,15 +38,15 @@ const SearchPage = (props) => {
       <div className="flex justify-between">
         <div>
           <select className="select select-primary select-xs mx-10 max-w-xs">
-  <option disabled selected>
-    Location
-  </option>
-  <option>All</option>
-  <option>USA</option>
-  <option>Other</option>
-  <option>Other</option>
-  <option>Other</option>
-</select>
+            <option disabled selected>
+              Location
+            </option>
+            <option>All</option>
+            <option>USA</option>
+            <option>Other</option>
+            <option>Other</option>
+            <option>Other</option>
+          </select>
 
           <select className="select select-primary select-xs mx-10 max-w-xs">
             <option disabled selected>
@@ -44,9 +65,9 @@ const SearchPage = (props) => {
           className="input input-xs input-bordered mx-10 max-w-xs"
         />
       </div>
-      <SearchPageCard />
+      {allPosts.length !== 0 ? <>{mappedPosts}</> : <div></div>}
     </div>
-  );
-};
+  )
+}
 
-export default SearchPage;
+export default SearchPage
