@@ -19,12 +19,13 @@ import SearchPage from './Components/SearchPage';
 import About from './Components/About';
 import Footer from './Components/Footer/Footer';
 import EducatorView from './Components/Educator/EducatorView';
+import Foundation from './Components/layout/Foundation';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
-      <main>
+<Foundation>
         <ScrollTop>
           <Routes>
             <Route path="/" element={<LandingPage/>} />
@@ -44,8 +45,9 @@ function App() {
             <Route path="/educator" element={<EducatorView/>} />
           </Routes>
         </ScrollTop>
-      </main>
-      <Footer/>
+   
+      {/* <Footer/> */}
+      </Foundation>
     </div>
   );
 }

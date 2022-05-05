@@ -6,9 +6,9 @@
   --pink: #E7DFE8;
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1524069290683-0457abfe42c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
@@ -18,7 +18,12 @@
   background-size: cover;
   position: relative;
 }
+.link {
+  text-decoration: none;
 
+}
+
+/* 
 main {
   margin-top: 50px;
   min-height: 80vh;
@@ -38,11 +43,7 @@ nav {
   margin: 0 50px;
 }
 
-.link {
-  text-decoration: none;
-  color: white;
-  padding: 0 30px;
-}
+
 
 button {
   background-color: blue;
@@ -53,4 +54,4 @@ button {
   width: 250px;
 }
 
-
+ */
