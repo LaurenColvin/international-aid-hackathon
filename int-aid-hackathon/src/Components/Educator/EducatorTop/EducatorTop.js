@@ -2,17 +2,12 @@ import TeacherAvatar from "./TeacherAvatar";
 import React from "react";
 import TeacherInfo from "./TeacherInfo";
 import EducatorCarousel from "./EducatorCarousel";
-  //mock user object shape for UI data reqs
-const user = {
-  imgUrl: "https://api.lorem.space/image/face?hash=92310",
-  schoolName: "string school",
-  grade: 13,
-  location: "string country",
-};
-
-function EducatorTop({}) {
 
 
+function EducatorTop({user}) {
+
+//TODO: FIX NAVBAR AND REMOVE MT-10
+//TODO: height in vh with breakpoints, make a parent Educator component for position reference and handling responsiveness
   return (
     <div className="w-full mt-10 bg-black flex flex-row p-4 justify-between items-stretch">
       <section className="items-start pl-3 w-[30vw]">

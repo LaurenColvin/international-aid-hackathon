@@ -10,6 +10,7 @@ import TeacherProfile from './Components/TeacherProfile';
 import SearchPage from './Components/SearchPage';
 import About from './Components/About';
 import Footer from './Components/Footer/Footer';
+import EducatorView from './Components/Educator/EducatorView';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/teacher-profile" element={<TeacherProfile/>} />
             <Route path="/search" element={<SearchPage/>} />
             <Route path="/about" element={<About/>} />
+            <Route path="/educator" element={<EducatorView/>} />
           </Routes>
         </ScrollTop>
       </main>

@@ -1,8 +1,8 @@
-import EducatorTop from "./Educator/EducatorTop";
-
 const SearchPage = (props) => {
     return (
-      <EducatorTop/> 
+        <div>
+            <h2>Search what to donate</h2>
+        </div>
     )
 }
 
