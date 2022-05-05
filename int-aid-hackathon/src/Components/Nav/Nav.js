@@ -22,7 +22,7 @@ const Nav = (props) => {
         </div>
       </div>
       <div class="navbar-center">
-        <Link to="/"><img className="h-12"src="https://cdn.discordapp.com/attachments/971825989174825001/971825991540441128/Chalkbox_1.png" alt="black-logo"></img></Link>
+        <Link to="/"><img className="h-12 m-0"src="https://cdn.discordapp.com/attachments/971825989174825001/971825991540441128/Chalkbox_1.png" alt="black-logo"></img></Link>
       </div>
       <div class="navbar-end">
         <Link to="/search"><button class="btn btn-ghost btn-circle">
