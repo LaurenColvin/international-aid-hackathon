@@ -11,32 +11,32 @@ const About = (props) => {
             <p>This is how Chalkbox was born. Chalkbox is a way for teachers to request the supplies they need and for those willing to help to step in and provide basic teaching tools.  </p>
         <h1>MEET THE TEAM</h1>
         <figure>
-            <img className="image" src="https://ca.slack-edge.com/T0351JZQ0-U02Q73AJ8HZ-a3abf5bb94c9-512" alt=""/>
+            <img className="w-48 m-3" src="https://ca.slack-edge.com/T0351JZQ0-U02Q73AJ8HZ-a3abf5bb94c9-512" alt=""/>
             <figcaption>Lauren Colvin</figcaption>
             <figcaption>Software Developer</figcaption>
         </figure>
         <figure>
-            <img className="image" src="https://ca.slack-edge.com/T0351JZQ0-U02ET36PZJ5-cc339736dcad-512" alt=""/>
+            <img className="w-48 m-3" src="https://ca.slack-edge.com/T0351JZQ0-U02ET36PZJ5-cc339736dcad-512" alt=""/>
             <figcaption>Benjamin Nagle</figcaption>
             <figcaption>Software Developer</figcaption>
         </figure>
         <figure>
-            <img className="image" src="https://ca.slack-edge.com/T0351JZQ0-U02TQ2C310E-eee1976b7036-512" alt=""/>
+            <img className="w-48 m-3" src="https://ca.slack-edge.com/T0351JZQ0-U02TQ2C310E-eee1976b7036-512" alt=""/>
             <figcaption>Margaret Payne</figcaption>
             <figcaption>User Experience Designer</figcaption>
         </figure>
         <figure>
-            <img className="image" src="https://ca.slack-edge.com/T0351JZQ0-U02ULEMD35W-526da3d04aa0-512" alt=""/>
+            <img className="w-48 m-3" src="https://ca.slack-edge.com/T0351JZQ0-U02ULEMD35W-526da3d04aa0-512" alt=""/>
             <figcaption>Jordan Schaeffer</figcaption>
             <figcaption>User Experience Designer</figcaption>
         </figure>
         <figure>
-            <img className="image" src="https://ca.slack-edge.com/T0351JZQ0-U02U51PK61G-gd4754415c0a-512" alt=""/>
+            <img className="w-48 m-3" src="https://ca.slack-edge.com/T0351JZQ0-U02U51PK61G-gd4754415c0a-512" alt=""/>
             <figcaption>Chanhee Grace Sung</figcaption>
             <figcaption>Software Developer</figcaption>
         </figure>
         <figure>
-            <img className="image" src="https://ca.slack-edge.com/T0351JZQ0-U02EJFFMRCM-6acc93326c93-512" alt=""/>
+            <img className="w-48 m-3" src="https://ca.slack-edge.com/T0351JZQ0-U02EJFFMRCM-6acc93326c93-512" alt=""/>
             <figcaption>Jordan Walsh</figcaption>
             <figcaption>Software Developer</figcaption>
         </figure>

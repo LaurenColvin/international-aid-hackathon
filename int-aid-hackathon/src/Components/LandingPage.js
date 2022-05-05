@@ -6,7 +6,7 @@ const LandingPage = (props) => {
             <div className="hero-image min-h-full h-96 flex content-center justify-center">
                 <div className="hero-content text-center">
                     <div className="max-w-xlg">
-                        <img className="w-96 m-0" src="https://cdn.discordapp.com/attachments/971825989174825001/971825991766925332/Chalkbox_White_1.png" alt="white-logo"></img>
+                        <img className="" src="https://cdn.discordapp.com/attachments/971825989174825001/971825991766925332/Chalkbox_White_1.png" alt="white-logo"></img>
                         <h1 className="text-4xl font-bold text-white">WE HELP EDUCATORS AROUND THE <br/> GLOBE GET THE SUPPLIES THEY NEED</h1>
                     </div>
                 </div>

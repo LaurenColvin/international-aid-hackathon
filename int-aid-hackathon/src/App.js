@@ -16,7 +16,7 @@ import StoryPage from './Components/TeacherSignUp/Story';
 import SupplyListPage from './Components/TeacherSignUp/SupplyList';
 import TeacherProfile from './Components/TeacherProfile';
 import SearchPage from './Components/SearchPage';
-import About from './Components/About';
+import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import EducatorView from './Components/Educator/EducatorView';
 import Foundation from './Components/layout/Foundation';
