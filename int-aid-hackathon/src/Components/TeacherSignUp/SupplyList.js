@@ -6,6 +6,7 @@ import { dbClient } from "../../services/dbClient"
 
 const SupplyListPage = (props) => {
   const [allSupplies, setAllSupplies] = useState([])
+  const [wantItems, setWantItems] = useState({})
 
   useEffect(() => {
     getItems()
@@ -13,8 +14,15 @@ const SupplyListPage = (props) => {
 
   const getItems = async () => {
     const { data, error } = await dbClient.from("items").select()
-    setAllSupplies(data)
+    setAllSupplies(data)  
   }
+
+  // const handleClick = async (event) => { data, error } = await supabase
+  // .from('cities')
+  // .insert([
+  //   { name: 'The Shire', country_id: 554 },
+  //   { name: 'Rohan', country_id: 555 },
+  // ])
 
   return (
     <CardWrapper>
